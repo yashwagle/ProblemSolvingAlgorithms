@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc09c506-7072-4c33-a3a7-67ea14f67dc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Stack/infixtopostfix.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ProblemSolvingAssigments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProblemSolvingAssigments.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stack/balancedParanthesis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stack/balancedParanthesis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stack/Stack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -27,18 +27,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stack/balancedParanthesis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+            <state>
+              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Stack/infixtopostfix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stack/NumberConvertor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-            </state>
+            <state relative-caret-position="-102" />
           </provider>
         </entry>
       </file>
@@ -65,13 +72,14 @@
         <option value="$PROJECT_DIR$/fraction.py" />
         <option value="$PROJECT_DIR$/Stack/Stack.py" />
         <option value="$PROJECT_DIR$/Stack/balancedParanthesis.py" />
-        <option value="$PROJECT_DIR$/Stack/NumberConvertor.py" />
+        <option value="$PROJECT_DIR$/Stack/InfixtoPostfix.py" />
+        <option value="$PROJECT_DIR$/Stack/infixtopostfix.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="10" />
-    <option name="y" value="43" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="163" />
+    <option name="y" value="62" />
     <option name="width" value="1260" />
     <option name="height" value="692" />
   </component>
@@ -81,23 +89,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ProblemSolvingAssigments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProblemSolvingAssigments" type="462c0819:PsiDirectoryNode" />
+              <item name="AlgorithmsAndDS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmsAndDS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProblemSolvingAssigments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProblemSolvingAssigments" type="462c0819:PsiDirectoryNode" />
+              <item name="AlgorithmsAndDS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmsAndDS" type="462c0819:PsiDirectoryNode" />
               <item name="Stack" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -118,28 +126,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.NumberConvertor">
-    <configuration name="NumberConvertor" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ProblemSolvingAssigments" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Stack" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Stack/NumberConvertor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.infixtopostfix">
     <configuration name="Stack" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ProblemSolvingAssigments" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -203,9 +190,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="infixtopostfix" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ProblemSolvingAssigments" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Stack" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Stack/infixtopostfix.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.NumberConvertor" />
+        <item itemvalue="Python.infixtopostfix" />
         <item itemvalue="Python.balancedParanthesis" />
         <item itemvalue="Python.Stack" />
         <item itemvalue="Python.fraction" />
@@ -226,11 +234,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="43" width="1260" height="692" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24939467" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19264892" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -238,7 +246,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.24666667" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32839838" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -259,22 +267,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Stack/Stack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Stack/balancedParanthesis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Stack/NumberConvertor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="-102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stack/infixtopostfix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
         </state>
       </provider>
     </entry>
