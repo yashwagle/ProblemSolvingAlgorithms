@@ -33,9 +33,28 @@ def ConvertInfixtoPostfix(exp):
                 s.push(ch)
     while s.isEmpty() == False:
         postfix.append(s.pop())
-    return " ".join(postfix)
+    return postfix
+
+def evaluatePostfix(postfixList):
+    st = Stack()
+    for ch in postfixList:
+        if ch in '0123456789':
+            st.push(ch)
+        else:
+            operand2 = st.pop()
+            operand1 = st.pop()
+            if ch == '+':
+                ans = int(operand1) + int(operand2)
+            elif ch == '-':
+                ans = int(operand1) - int(operand2)
+            elif ch == '*':
+                ans = int(operand1) * int(operand2)
+            elif ch == '/':
+                ans = int(operand1) // int(operand2)
+            st.push(ans)
+    return st.pop()
 
 
-print(str(ConvertInfixtoPostfix('( A + B ) * ( C + D ) * ( E + F )')))
+print((evaluatePostfix(ConvertInfixtoPostfix('( 9 + 2 ) * 8'))))
 
 
