@@ -31,6 +31,34 @@ class UnorderedList:
             n.setNext(self.head)
             self.head = n
 
+    def append(self, item):
+        n = Node(item)
+        pos = self.head
+        prev = None
+        while pos!=None:
+            prev = pos
+            pos = pos.getNext()
+        if prev == None:
+            self.head = n
+        else:
+            prev.setNext(n)
+
+    def insert(self, item, position):
+        n = Node(item)
+        if position==0:
+            n.setNext(self.head)
+            self.head = n
+            return
+        i = 0
+        pos = self.head
+        prev = None
+        while i < position:
+            i = i + 1
+            prev = pos
+            pos = pos.getNext()
+        n.setNext(pos)
+        prev.setNext(n)
+
     def display(self):
         n = self.head
         print('The list is')
@@ -74,6 +102,19 @@ class UnorderedList:
         else:
             previous.setNext(point.getNext())
 
+    def slice(self, startpos, endpos):
+        i = 0
+        start = self.head
+        slicedList = UnorderedList()
+        while i< startpos:
+            start = start.getNext()
+            i = i+1
+        while i<endpos:
+            slicedList.append(start.getData())
+            i = i + 1
+            start = start.getNext()
+        return slicedList
+
 
 
 def driver():
@@ -86,6 +127,12 @@ def driver():
     print(un.search(5))
     print(un.size())
     un.remove('hey')
+    un.add(6)
+    un.add('dog')
+    un.add('cat')
+    un.add('rat')
+    sliced = un.slice(3,6)
+    sliced.display()
     un.display()
 
 driver()

@@ -3,6 +3,7 @@ from DeQueue import Dequeue
 
 def checkpalindrome(str):
     d = Dequeue()
+    str = str.replace(' ','')
     for ch in str:
         d.addFront(ch)
 
@@ -12,4 +13,4 @@ def checkpalindrome(str):
             ispalindrome = False
     return ispalindrome
 
-print(checkpalindrome('radar'))
+print(checkpalindrome('I PREFER DI'))
