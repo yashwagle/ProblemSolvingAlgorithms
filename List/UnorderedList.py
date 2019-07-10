@@ -22,9 +22,11 @@ class UnorderedList:
 
     def __init__(self):
         self.head = None
+        self.length = 0
 
     def add(self, item):
         n = Node(item)
+        self.length = self.length + 1
         if self.head == None:
             self.head = n
         else:
@@ -42,6 +44,7 @@ class UnorderedList:
             self.head = n
         else:
             prev.setNext(n)
+        self.length = self.length + 1
 
     def insert(self, item, position):
         n = Node(item)
@@ -58,6 +61,7 @@ class UnorderedList:
             pos = pos.getNext()
         n.setNext(pos)
         prev.setNext(n)
+        self.length = self.length + 1
 
     def display(self):
         n = self.head
@@ -90,17 +94,20 @@ class UnorderedList:
         point =self.head
         previous = None
         found = False
-        while not found:
+        while not found and point!=None:
             if point.getData() == item:
                 found = True
             else:
                 previous = point
                 point = point.getNext()
-
+        if found == False:
+            return False
         if previous == None:
             self.head = self.head.getNext()
         else:
             previous.setNext(point.getNext())
+        self.length = self.length - 1
+        return True
 
     def slice(self, startpos, endpos):
         i = 0
@@ -133,7 +140,44 @@ def driver():
     un.add('rat')
     sliced = un.slice(3,6)
     sliced.display()
+    print(sliced.remove('rat'))
+    sliced.display()
     un.display()
 
-driver()
+#driver()
+
+def ULinput():
+    ch = 0
+    un = UnorderedList()
+    while ch!=8:
+        ch=input('Enter choice 1: Add 2: Insert 3:Append 4:Remove 5:Display 6:length 7:slice 8:exit')
+        if ch == '1':
+            item = input('Enter the item')
+            un.add(item)
+        elif ch == '2':
+            item = input('Enter the item')
+            pos = input('Enter the position')
+            un.insert(item,int(pos))
+        elif ch=='3':
+            item = input('Enter the item')
+            un.append(item)
+        elif ch=='4':
+            item = input('Enter item to be removed')
+            if un.remove(item):
+                print('Delete successsful')
+            else:
+                print('Item not found Delete failed')
+        elif ch=='5':
+            un.display()
+        elif ch=='6':
+            print(un.length)
+        elif ch=='7'1:
+            start = input('enter start position')
+            end = input('enter end position')
+            sliced = un.slice(int(start), int(end))
+            print('Slice list is')
+            sliced.display()
+
+
+ULinput()
 
