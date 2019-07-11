@@ -27,11 +27,8 @@ class UnorderedList:
     def add(self, item):
         n = Node(item)
         self.length = self.length + 1
-        if self.head == None:
-            self.head = n
-        else:
-            n.setNext(self.head)
-            self.head = n
+        n.setNext(self.head)
+        self.head = n
 
     def append(self, item):
         n = Node(item)
