@@ -168,13 +168,12 @@ def ULinput():
             un.display()
         elif ch=='6':
             print(un.length)
-        elif ch=='7'1:
+        elif ch=='7':
             start = input('enter start position')
             end = input('enter end position')
             sliced = un.slice(int(start), int(end))
             print('Slice list is')
             sliced.display()
-
 
 ULinput()
 
